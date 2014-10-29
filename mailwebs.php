@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Mail Webs - Secure Authenticated SMTP Server.
-Version: 1.0.0
+Version: 1.0.1
 Plugin URI: https://github.com/belkincapital/mailwebs
 Description: Reconfigures the wp_mail() function to use SMTP instead of php mail() function.
 Author: Jason Jersey
@@ -26,8 +26,8 @@ $mailwebs_options = array (
 	'mail_from_name' => '',
 	'mailer' => 'smtp',
 	'mail_set_return_path' => 'false',
-	'smtp_host' => 'mail.vps42975.mylogin.co',
-	'smtp_port' => '2525',
+	'smtp_host' => 'localhost',
+	'smtp_port' => '25',
 	'smtp_ssl' => '',
 	'smtp_auth' => true,
 	'smtp_user' => '',
