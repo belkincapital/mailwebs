@@ -21,6 +21,8 @@ You may also use this plugin with any other smtp server, you'll just want to mak
 
 ### Manual
 
+Check out the Codex for more information about [installing plugins manually](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+
 1. Download the latest [tagged archive](https://github.com/belkincapital/mailwebs/releases) (choose the "zip" option).
 2. Unzip the archive.
 3. Fix the folder name to remove the extra stuff GitHub adds, like _-master_. Rename to **mailwebs**.
@@ -51,8 +53,6 @@ NOTE: Make sure you edit the **MAILWEBS_MAIL_FROM**, **MAILWEBS_MAIL_FROM_NAME**
 `define('MAILWEBS_SMTP_USER', 'your@email-address.com'); // SMTP authentication username.`
 
 `define('MAILWEBS_SMTP_PASS', '1234567890'); // SMTP authentication password.`
-
-Check out the Codex for more information about [installing plugins manually](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation). 
 
 ## Issues
 
