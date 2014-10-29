@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Mail Webs - Secure Authenticated SMTP Server.
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: https://github.com/belkincapital/mailwebs
 Description: Reconfigures the wp_mail() function to use SMTP instead of php mail() function.
 Author: Jason Jersey
@@ -64,9 +64,9 @@ function mail_we_bs_smtp_whitelist_options($whitelist_options) {
 endif;
 
 // To avoid any (very unlikely) clashes, check if the function alredy exists
-if (!function_exists('phpmailer_init_smtp')) :
+if (!function_exists('phpmailer_init_mailwebs_smtp')) :
 // This code is copied, from wp-includes/pluggable.php as at version 2.2.2
-function phpmailer_init_smtp($phpmailer) {
+function phpmailer_init_mailwebs_smtp($phpmailer) {
 	
 	// If constants are defined, apply those options
 	if (defined('MAILWEBS_ON') && MAILWEBS_ON) {
@@ -135,7 +135,7 @@ function phpmailer_init_smtp($phpmailer) {
 		
 	}
 	
-} // End of phpmailer_init_smtp() function definition
+} // End of phpmailer_init_mailwebs_smtp() function definition
 endif;
 
 /**
@@ -197,7 +197,7 @@ function mail_we_bs_smtp_mail_from_name ($orig) {
 endif;
 
 // Add an action on phpmailer_init
-add_action('phpmailer_init','phpmailer_init_smtp');
+add_action('phpmailer_init','phpmailer_init_mailwebs_smtp');
 
 if (!defined('MAILWEBS_ON') || !MAILWEBS_ON) {
 	// Whitelist our options
