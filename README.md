@@ -31,15 +31,25 @@ You may also use this plugin with any other smtp server, you'll just want to mak
 NOTE: Make sure you edit the **MAILWEBS_MAIL_FROM**, **MAILWEBS_MAIL_FROM_NAME**, **MAILWEBS_SMTP_USER** and **MAILWEBS_SMTP_PASS**.
 
 `define('MAILWEBS_ON', true); // Enable global smtp server.`
+
 `define('MAILWEBS_MAIL_FROM', 'your@email-address.com'); // Your From email address.`
+
 `define('MAILWEBS_MAIL_FROM_NAME', 'My Company Name'); // Your From name.`
+
 `define('MAILWEBS_MAILER', 'smtp'); // Leave set to smtp.`
+
 `define('MAILWEBS_SET_RETURN_PATH', 'false'); // Sets $phpmailer->Sender if true.`
+
 `define('MAILWEBS_SMTP_HOST', 'mail.vps42975.mylogin.co'); // The SMTP mail host.`
+
 `define('MAILWEBS_SMTP_PORT', 2525); // 587 and 25 may also be used.`
+
 `define('MAILWEBS_SSL', ''); // Possible values '', 'ssl', 'tls'.`
+
 `define('MAILWEBS_SMTP_AUTH', true); // True turns on SMTP authentication.`
+
 `define('MAILWEBS_SMTP_USER', 'your@email-address.com'); // SMTP authentication username.`
+
 `define('MAILWEBS_SMTP_PASS', '1234567890'); // SMTP authentication password.`
 
 Check out the Codex for more information about [installing plugins manually](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation). 
